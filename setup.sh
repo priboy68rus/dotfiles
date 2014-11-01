@@ -16,9 +16,9 @@ echo "Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir
 echo "..done"
 
-for file in $files do
-		echo "Moving old dotfile to $olddir"
-		mv ~/.$file $olddir
-		echo "Creating symlink to $file in home dir"
-		ln -s $dir/$file ~/.$file
+for file in $files; do
+	echo "Moving old dotfile to $olddir"
+	mv ~/.$file $olddir
+	echo "Creating symlink to $file in home dir"
+	ln -s $dir/.$file ~/.$file
 done
