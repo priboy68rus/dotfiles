@@ -128,9 +128,9 @@ highlight ColorColumn ctermbg=233
 
 " Real programmers don't use TABs but spaces
 set tabstop=4
-"" set softtabstop=4
-"" set shiftwidth=4
-"" set shiftround
+ set softtabstop=4
+ set shiftwidth=4
+ set shiftround
 "" set expandtab
 
 
