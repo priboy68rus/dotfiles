@@ -1,0 +1,27 @@
+unalias ls
+alias ls='ls -FG'
+alias trash='sudo rm -rf ~/.Trash/*'
+alias cls='clear && ls'
+alias mouse='defaults read .GlobalPreferences com.apple.mouse.scaling -1'
+alias touchpad='defaults read .GlobalPreferences com.apple.mouse.scaling 2'
+alias sshrm='rm ~/.ssh/known_hosts'
+alias sendcode='~/.code/sendcode.script'
+alias zshrc='vim ~/.zshrc && source ~/.zshrc'
+alias vimrc='vim ~/.vimrc'
+alias adddiv="defaults write com.apple.dock persistent-apps -array-add '{tile-data={};tile-type="spacer-tile";}'; killall Dock"
+alias o="open ."
+
+
+
+
+alias j='jobs'
+
+alias aliases='vim ~/.oh-my-zsh/.aliases && source ~/.zshrc'
+
+alias t='cd ~/code/temp'
+alias c='cd ~/code'
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
+
+alias mkd='mkdir'
