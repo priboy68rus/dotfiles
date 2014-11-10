@@ -7,10 +7,12 @@ DEFAULT_USER="john"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="agnoster"
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="theunraveler"
 #ZSH_THEME="pure"
+#ZSH_THEME="random"
+#ZSH_THEME="af-magic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -82,3 +84,6 @@ plugins=(git history history-substring-search zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
 source ~/.oh-my-zsh/.aliases
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

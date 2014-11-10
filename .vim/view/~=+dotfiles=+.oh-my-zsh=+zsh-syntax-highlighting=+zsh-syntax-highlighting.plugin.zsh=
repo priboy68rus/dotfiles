@@ -9,9 +9,9 @@ setlocal nocindent
 setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
-setlocal colorcolumn=
-setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
-setlocal commentstring=/*%s*/
+setlocal colorcolumn=80
+setlocal comments=:#
+setlocal commentstring=#\ %s
 setlocal complete=.,w,b,u,t,i
 setlocal completefunc=
 setlocal nocopyindent
@@ -25,11 +25,11 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal noexpandtab
-if &filetype != ''
-setlocal filetype=
+if &filetype != 'zsh'
+setlocal filetype=zsh
 endif
 setlocal foldcolumn=0
-setlocal foldenable
+setlocal nofoldenable
 setlocal foldexpr=0
 setlocal foldignore=#
 setlocal foldlevel=0
@@ -39,24 +39,24 @@ setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldtext=foldtext()
 setlocal formatexpr=
-setlocal formatoptions=tcq
+setlocal formatoptions=croql
 setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
 setlocal grepprg=
 setlocal iminsert=0
 setlocal imsearch=0
 setlocal include=
 setlocal includeexpr=
-setlocal indentexpr=
-setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal indentexpr=GetShIndent()
+setlocal indentkeys=0{,0},!^F,o,O,e,0=then,0=do,0=else,0=elif,0=fi,0=esac,0=done,),0=;;,0=;&,0=fin,0=fil,0=fip,0=fir,0=fix
 setlocal noinfercase
-setlocal iskeyword=@,48-57,_,192-255
+setlocal iskeyword=@,48-57,_,192-255,-
 setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
 setlocal nolist
 setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
-setlocal nomodeline
+setlocal modeline
 setlocal modifiable
 setlocal nrformats=octal,hex
 setlocal number
@@ -69,36 +69,36 @@ setlocal quoteescape=\\
 setlocal noreadonly
 setlocal norelativenumber
 setlocal noscrollbind
-setlocal shiftwidth=4
+setlocal shiftwidth=8
 setlocal noshortname
 setlocal nosmartindent
-setlocal softtabstop=4
+setlocal softtabstop=0
 setlocal nospell
-setlocal spellcapcheck=
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
 setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != ''
-setlocal syntax=
+if &syntax != 'zsh'
+setlocal syntax=zsh
 endif
 setlocal tabstop=4
 setlocal tags=
-setlocal textwidth=0
+setlocal textwidth=79
 setlocal thesaurus=
 setlocal noundofile
 setlocal nowinfixheight
 setlocal nowinfixwidth
-setlocal wrap
+setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 13) / 27)
+let s:l = 218 - ((33 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+218
 normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
