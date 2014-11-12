@@ -93,7 +93,8 @@ preexec() {
 #
 precmd() {
     vcs_info # Get version control info before we start outputting stuff
-    print -P "\n$(repo_information) %F{yellow}$(cmd_exec_time)%f"
+#    print -P "\n$(repo_information) %F{yellow}$(cmd_exec_time)%f"
+    print -P "$(repo_information) %F{yellow}$(cmd_exec_time)%f"
 }
 
 # Define prompts

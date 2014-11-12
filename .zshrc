@@ -12,7 +12,6 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="theunraveler"
 #ZSH_THEME="pure"
 #ZSH_THEME="random"
-#ZSH_THEME="af-magic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

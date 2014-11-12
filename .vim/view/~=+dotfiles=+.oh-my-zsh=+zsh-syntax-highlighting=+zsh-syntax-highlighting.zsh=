@@ -94,11 +94,11 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 218 - ((27 * winheight(0) + 14) / 28)
+let s:l = 51 - ((0 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-218
+51
 normal! 0
 lcd ~/dotfiles
 let &so = s:so_save | let &siso = s:siso_save
