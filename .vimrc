@@ -98,7 +98,8 @@ vnoremap > >gv  " better indentation
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
 "color wombat256mod
-"color molokai
+color molokai
+let g:molokai_original = 1
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
@@ -128,9 +129,9 @@ set fo-=t   " don't automatically wrap text when typing
 
 " Real programmers don't use TABs but spaces
 set tabstop=4
- set softtabstop=4
- set shiftwidth=4
- set shiftround
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 "" set expandtab
 
 
