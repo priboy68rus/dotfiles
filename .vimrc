@@ -19,6 +19,17 @@ map! <S-Insert> <MiddleMouse>
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
 
+"set cursorline
+
+"augroup CursorLine
+"  au!
+"  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+"  au WinLeave * setlocal nocursorline
+"augroup END
+
+set scrolloff=3
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Automatic reloading of .vimrc
@@ -155,6 +166,7 @@ set noswapfile
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 " call pathogen#infect()
+execute pathogen#infect()
 
 
 " ============================================================================
