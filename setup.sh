@@ -23,4 +23,5 @@ for file in $files; do
 	ln -s $dir/.$file ~/.$file
 done
 
-echo "Add some useful"
+# echo "Add some useful"
+chsh -s /bin/zsh
