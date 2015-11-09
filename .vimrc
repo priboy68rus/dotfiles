@@ -16,8 +16,8 @@ set mouse=a
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+"au BufWinLeave * mkview
+"au BufWinEnter * silent loadview
 
 "set cursorline
 

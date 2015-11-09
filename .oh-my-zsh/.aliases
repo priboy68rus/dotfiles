@@ -1,4 +1,3 @@
-unalias ls
 alias ls='ls -FG'
 alias trash='sudo rm -rf ~/.Trash/*'
 alias cls='clear && ls'
@@ -18,8 +17,8 @@ alias j='jobs'
 
 alias aliases='vim ~/.oh-my-zsh/.aliases && source ~/.zshrc'
 
-alias t='cd ~/code/temp'
-alias c='cd ~/code'
+alias t='cd ~/Code/temp'
+alias c='cd ~/Code'
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
