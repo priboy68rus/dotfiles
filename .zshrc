@@ -87,3 +87,6 @@ source ~/.oh-my-zsh/.aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Flutter
+export PATH="/Users/john/Library/Flutter/flutter/bin:$PATH"
